@@ -296,17 +296,43 @@ document.addEventListener('DOMContentLoaded', () => {
         // Load Google Maps API
         const loadGoogleMapsApi = () => {
             if (window.google && window.google.maps) {
-                initMap();
+                try {
+                    initMap();
+                } catch (error) {
+                    console.error("Google Maps initialization error:", error);
+                    mapContainer.innerHTML = '';  // Clear container to trigger fallback
+                }
                 return;
             }
             
             const script = document.createElement('script');
-            script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDq-WSH9gcX98nxD-IYyOxbPfVRl29a8i8&callback=initMap';
+            script.src = 'https://maps.googleapis.com/maps/api/js?callback=initMap';
             script.async = true;
             script.defer = true;
-            document.head.appendChild(script);
+            script.onerror = function() {
+                console.error("Google Maps API failed to load");
+                mapContainer.innerHTML = '';  // Clear container to trigger fallback
+            };
             
-            window.initMap = initMap;
+            // Set timeout to handle case where script loads but callback never fires
+            const timeout = setTimeout(() => {
+                if (!window.google || !window.google.maps) {
+                    console.error("Google Maps API failed to initialize in time");
+                    mapContainer.innerHTML = '';  // Clear container to trigger fallback
+                }
+            }, 5000);
+            
+            window.initMap = function() {
+                clearTimeout(timeout);
+                try {
+                    initMap();
+                } catch (error) {
+                    console.error("Google Maps initialization error:", error);
+                    mapContainer.innerHTML = '';  // Clear container to trigger fallback
+                }
+            };
+            
+            document.head.appendChild(script);
         };
         
         // Initialize the map with markers
