@@ -54,11 +54,15 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('mousedown', () => {
         cursor.style.transform = 'translate(-50%, -50%) scale(0.8)';
         cursorFollower.style.transform = 'translate(-50%, -50%) scale(0.8)';
+        cursor.style.color = '#777777'; // Cor mais escura quando clica
+        cursorFollower.style.color = '#777777';
     });
 
     document.addEventListener('mouseup', () => {
         cursor.style.transform = 'translate(-50%, -50%) scale(1)';
         cursorFollower.style.transform = 'translate(-50%, -50%) scale(1)';
+        cursor.style.color = ''; // Volta para a cor original
+        cursorFollower.style.color = '';
     });
 
     // Hover effect for interactive elements
@@ -68,13 +72,15 @@ document.addEventListener('DOMContentLoaded', () => {
         element.addEventListener('mouseenter', () => {
             cursor.style.transform = 'translate(-50%, -50%) scale(1.5)';
             cursorFollower.style.transform = 'translate(-50%, -50%) scale(1.5)';
-            cursorFollower.style.borderColor = 'transparent';
+            cursor.style.opacity = '1';
+            cursorFollower.style.opacity = '1';
         });
         
         element.addEventListener('mouseleave', () => {
             cursor.style.transform = 'translate(-50%, -50%) scale(1)';
             cursorFollower.style.transform = 'translate(-50%, -50%) scale(1)';
-            cursorFollower.style.borderColor = 'var(--secondary-color)';
+            cursor.style.opacity = '';
+            cursorFollower.style.opacity = '0.7';
         });
     });
 
@@ -122,9 +128,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Gallery images
     const galleryImages = [
         {
-            url: 'images/gallery/acadia1.jpg',
-            title: 'Acadia National Park',
-            description: 'Beautiful coastal views and hiking trails'
+            url: 'images/acadia-national-park-overview.webp',
+            title: 'Acadia National Park Overview',
+            description: 'Breathtaking views of mountains meeting the sea'
         },
         {
             url: 'images/bar-harbor.jpg',
@@ -132,24 +138,24 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Charming coastal town with delicious seafood'
         },
         {
-            url: 'images/gallery/cadillac-mountain.jpg',
+            url: 'images/Sunrise at Cadillac Mountain.webp',
             title: 'Sunrise at Cadillac Mountain',
             description: 'First place to see sunrise in the United States'
         },
         {
-            url: 'images/gallery/acadia4.jpg',
+            url: 'images/Forest-Trails.webp',
             title: 'Forest Trails',
-            description: 'Peaceful walks through nature'
+            description: 'Peaceful walks through Acadia\'s lush forests'
         },
         {
-            url: 'images/gallery/acadia5.jpg',
+            url: 'images/Coastal_Views.webp',
             title: 'Coastal Views',
-            description: 'Stunning ocean vistas'
+            description: 'Stunning ocean vistas along the dramatic shoreline'
         },
         {
-            url: 'images/gallery/acadia3.jpg',
+            url: 'images/Sunset-at-Bass-Harbor.jpg',
             title: 'Sunset at Bass Harbor',
-            description: 'Magical evening moments'
+            description: 'Magical evening light at the historic lighthouse'
         }
     ];
 
@@ -546,7 +552,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 card.innerHTML = `
                     <div class="memory-img">
-                        <img src="${memory.photoUrl || 'images/gallery/acadia1.jpg'}" alt="${memory.title}">
+                        <img src="${memory.photoUrl || 'images/acadia-national-park-overview.webp'}" alt="${memory.title}">
                     </div>
                     <div class="memory-content">
                         <div class="memory-header">
@@ -688,4 +694,4 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     
     initMemoryJournal();
-}); 
+});

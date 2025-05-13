@@ -360,8 +360,8 @@
                                             <p class="accommodation-phone">Phone: <a href="tel:+12072888422">+1 207-288-8422</a></p>
                                         </div>
                                         <div class="accommodation-image">
-                                            <a href="https://maps.app.goo.gl/SFVpg7xLv5aoxP3b9" target="_blank" class="map-link" title="Open in Maps">
-                                                <img src="images/acadia-inn.webp" alt="Acadia Inn">
+                                            <a href="https://maps.app.goo.gl/r9h5BW9yDgdybB747" target="_blank" class="map-link" title="Open in Maps">
+                                                <img src="images/acadia-inn.webp" alt="Acadia Inn" style="max-width: 100px; height: auto;">
                                                 <div class="map-icon"><i class="fas fa-map-marker-alt"></i></div>
                                             </a>
                                         </div>
@@ -384,8 +384,8 @@
                                             <p class="accommodation-phone">Telefone: <a href="tel:+12072888422">+1 207-288-8422</a></p>
                                         </div>
                                         <div class="accommodation-image">
-                                            <a href="https://maps.app.goo.gl/SFVpg7xLv5aoxP3b9" target="_blank" class="map-link" title="Abrir no Maps">
-                                                <img src="images/acadia-inn.webp" alt="Acadia Inn">
+                                            <a href="https://maps.app.goo.gl/r9h5BW9yDgdybB747" target="_blank" class="map-link" title="Abrir no Maps">
+                                                <img src="images/acadia-inn.webp" alt="Acadia Inn" style="max-width: 100px; height: auto;">
                                                 <div class="map-icon"><i class="fas fa-map-marker-alt"></i></div>
                                             </a>
                                         </div>
@@ -730,115 +730,19 @@
                     </div>
                 </div>
                 
-                <div class="memories-content" data-aos="fade-up">
+                <div class="memories-intro" data-aos="fade-up">
                     <div class="en">
-                        <p>Capture your special moments during the honeymoon and save them for a lifetime of memories. Use this journal to document your experiences, thoughts, and feelings.</p>
+                        <p>Capture the special moments from our honeymoon in Acadia National Park and Bar Harbor. These photos tell the story of our journey together.</p>
                     </div>
                     <div class="pt">
-                        <p>Capture seus momentos especiais durante a lua de mel e salve-os para uma vida inteira de memórias. Use este diário para documentar suas experiências, pensamentos e sentimentos.</p>
+                        <p>Eternize os momentos especiais de nossa lua de mel no Parque Nacional de Acadia e Bar Harbor. Estas fotos contam a história da nossa jornada juntos.</p>
                     </div>
-                    
-                    <div class="journal-form">
-                        <form id="memory-form">
-                            <div class="form-group">
-                                <label for="memory-date" class="en">Date</label>
-                                <label for="memory-date" class="pt">Data</label>
-                                <input type="date" id="memory-date" name="memory-date" min="2024-05-16" max="2024-05-18">
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="memory-location" class="en">Location</label>
-                                <label for="memory-location" class="pt">Local</label>
-                                <select id="memory-location" name="memory-location">
-                                    <option value="" disabled selected class="en">Select a location</option>
-                                    <option value="" disabled selected class="pt">Selecione um local</option>
-                                    <option value="acadia-inn">Acadia Inn</option>
-                                    <option value="cadillac-mountain">Cadillac Mountain</option>
-                                    <option value="thunder-hole">Thunder Hole</option>
-                                    <option value="jordan-pond">Jordan Pond</option>
-                                    <option value="sand-beach">Sand Beach</option>
-                                    <option value="bar-harbor-downtown">Bar Harbor Downtown</option>
-                                    <option value="bass-harbor-lighthouse">Bass Harbor Lighthouse</option>
-                                    <option value="other" class="en">Other (specify in description)</option>
-                                    <option value="other" class="pt">Outro (especifique na descrição)</option>
-                                </select>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="memory-title" class="en">Memory Title</label>
-                                <label for="memory-title" class="pt">Título da Memória</label>
-                                <input type="text" id="memory-title" name="memory-title" placeholder="E.g. Sunrise at Cadillac Mountain">
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="memory-description" class="en">Description</label>
-                                <label for="memory-description" class="pt">Descrição</label>
-                                <textarea id="memory-description" name="memory-description" rows="4" placeholder="Describe your experience..."></textarea>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="memory-mood" class="en">Mood</label>
-                                <label for="memory-mood" class="pt">Humor</label>
-                                <div class="mood-selector">
-                                    <div class="mood-option" data-mood="amazing">
-                                        <i class="fas fa-grin-stars"></i>
-                                        <span class="en">Amazing</span>
-                                        <span class="pt">Incrível</span>
-                                    </div>
-                                    <div class="mood-option" data-mood="happy">
-                                        <i class="fas fa-smile"></i>
-                                        <span class="en">Happy</span>
-                                        <span class="pt">Feliz</span>
-                                    </div>
-                                    <div class="mood-option" data-mood="peaceful">
-                                        <i class="fas fa-heart"></i>
-                                        <span class="en">Peaceful</span>
-                                        <span class="pt">Tranquilo</span>
-                                    </div>
-                                    <div class="mood-option" data-mood="tired">
-                                        <i class="fas fa-tired"></i>
-                                        <span class="en">Tired</span>
-                                        <span class="pt">Cansado</span>
-                                    </div>
-                                </div>
-                                <input type="hidden" id="memory-mood" name="memory-mood">
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="memory-photo" class="en">Add Photo</label>
-                                <label for="memory-photo" class="pt">Adicionar Foto</label>
-                                <div class="photo-upload">
-                                    <input type="file" id="memory-photo" name="memory-photo" accept="image/*">
-                                    <div class="upload-placeholder">
-                                        <i class="fas fa-camera"></i>
-                                        <span class="en">Click to upload</span>
-                                        <span class="pt">Clique para carregar</span>
-                                    </div>
-                                    <div class="photo-preview"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="form-actions">
-                                <button type="submit" class="submit-btn">
-                                    <span class="en">Save Memory</span>
-                                    <span class="pt">Salvar Memória</span>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                    
-                    <div class="saved-memories">
-                        <h3 class="en">Saved Memories</h3>
-                        <h3 class="pt">Memórias Salvas</h3>
-                        
-                        <div class="memories-grid" id="saved-memories-grid">
-                            <!-- Saved memories will appear here -->
-                            <div class="empty-memories">
-                                <i class="fas fa-book-open"></i>
-                                <p class="en">Your saved memories will appear here</p>
-                                <p class="pt">Suas memórias salvas aparecerão aqui</p>
-                            </div>
-                        </div>
+                </div>
+                
+                <div class="memories-gallery" data-aos="fade-up">
+                    <!-- As fotos serão adicionadas aqui pela pasta photos/memories -->
+                    <div class="photo-grid" id="memories-photos">
+                        <!-- Placeholder - será preenchido via JavaScript -->
                     </div>
                 </div>
             </div>
@@ -849,13 +753,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-text">
-                    <p class="en">Made with ❤️ for our special journey</p>
-                    <p class="pt">Feito com ❤️ para nossa jornada especial</p>
-                </div>
-                <div class="footer-icons">
-                    <a href="#" class="footer-icon"><i class="fas fa-heart"></i></a>
-                    <a href="#" class="footer-icon"><i class="fas fa-map-marked-alt"></i></a>
-                    <a href="#" class="footer-icon"><i class="fas fa-camera"></i></a>
+                    <p class="en">Made with <span class="heart-icon">❤️</span> for our special journey</p>
+                    <p class="pt">Feito com <span class="heart-icon">❤️</span> para nossa jornada especial</p>
                 </div>
             </div>
         </div>
