@@ -1,8 +1,8 @@
 // Language Switching
 document.addEventListener('DOMContentLoaded', () => {
     const langButtons = document.querySelectorAll('.lang-btn');
-    const enElements = document.querySelectorAll('.en');
-    const ptElements = document.querySelectorAll('.pt');
+    const enElements = document.querySelectorAll('.en, .highlight-text h5.en, .highlight-text p.en');
+    const ptElements = document.querySelectorAll('.pt, .highlight-text h5.pt, .highlight-text p.pt');
 
     // Set initial language - default to English
     const setLanguage = (lang) => {
@@ -18,9 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (lang === 'en') {
             enElements.forEach(el => el.classList.add('active'));
             ptElements.forEach(el => el.classList.remove('active'));
+            document.documentElement.lang = 'en';
         } else {
             enElements.forEach(el => el.classList.remove('active'));
             ptElements.forEach(el => el.classList.add('active'));
+            document.documentElement.lang = 'pt';
         }
     };
 

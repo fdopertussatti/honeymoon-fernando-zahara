@@ -1264,12 +1264,14 @@ footer::before {
 }
 
 /* Language Classes */
-.en, .pt {
-    display: none;
+.en, .pt,
+.en *, .pt * {
+    display: none !important;
 }
 
-.en.active, .pt.active {
-    display: inline-block;
+.en.active, .pt.active,
+.en.active *, .pt.active * {
+    display: inline-block !important;
 }
 
 /* For block-level elements, we need a specific override */
@@ -1279,10 +1281,32 @@ h3.en.active, h3.pt.active,
 h4.en.active, h4.pt.active,
 h5.en.active, h5.pt.active,
 p.en.active, p.pt.active,
-div.en.active, div.pt.active,
+div.en.active, div.pt.active, 
+section.en.active, section.pt.active,
+nav.en.active, nav.pt.active,
 ul.en.active, ul.pt.active,
-li.en.active, li.pt.active {
-    display: block;
+li.en.active, li.pt.active,
+.en.active div, .pt.active div,
+.en.active p, .pt.active p,
+.en.active h1, .pt.active h1,
+.en.active h2, .pt.active h2,
+.en.active h3, .pt.active h3,
+.en.active h4, .pt.active h4,
+.en.active h5, .pt.active h5,
+.en.active ul, .pt.active ul,
+.en.active li, .pt.active li,
+.highlight-text h5.en.active, .highlight-text h5.pt.active,
+.highlight-text p.en.active, .highlight-text p.pt.active {
+    display: block !important;
+}
+
+/* Fix for specific highlight items */
+.highlight-text h5, .highlight-text p {
+    display: none !important;
+}
+
+.highlight-text h5.active, .highlight-text p.active {
+    display: block !important;
 }
 
 /* Gallery Lightbox */
