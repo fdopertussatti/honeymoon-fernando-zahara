@@ -466,19 +466,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 <div class="weather-days">
                     <div class="weather-day">
-                        <div class="weather-date">May 16</div>
+                        <div class="weather-date">Thursday, May 16</div>
                         <div class="weather-icon"><i class="fas fa-cloud-sun"></i></div>
                         <div class="weather-temp">48°F / 62°F</div>
                         <div class="weather-desc">Partly Cloudy</div>
                     </div>
                     <div class="weather-day">
-                        <div class="weather-date">May 17</div>
+                        <div class="weather-date">Friday, May 17</div>
                         <div class="weather-icon"><i class="fas fa-sun"></i></div>
                         <div class="weather-temp">52°F / 65°F</div>
                         <div class="weather-desc">Mostly Sunny</div>
                     </div>
                     <div class="weather-day">
-                        <div class="weather-date">May 18</div>
+                        <div class="weather-date">Saturday, May 18</div>
                         <div class="weather-icon"><i class="fas fa-cloud"></i></div>
                         <div class="weather-temp">50°F / 63°F</div>
                         <div class="weather-desc">Partly Cloudy</div>
@@ -486,8 +486,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 
                 <div class="weather-info">
-                    <p class="en">*Forecast is approximate and for planning purposes</p>
-                    <p class="pt">*Previsão é aproximada e para fins de planejamento</p>
+                    <p class="en">*Forecast is approximate and based on seasonal averages. Check local weather before your trip.</p>
+                    <p class="pt">*Previsão aproximada baseada em médias sazonais. Verifique o clima local antes da viagem.</p>
                 </div>
             </div>
         `;
