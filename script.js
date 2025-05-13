@@ -451,52 +451,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     initHoneymoonMap();
     
-    // Initialize OpenWeatherMap widget
-    const initWeatherWidget = () => {
-        const weatherWidgetContainer = document.getElementById('openweathermap-widget');
-        if (!weatherWidgetContainer) return;
-        
-        // Criar um widget estático de previsão do tempo simplificado
-        weatherWidgetContainer.innerHTML = `
-            <div class="static-weather-widget">
-                <div class="weather-header">
-                    <h3>Bar Harbor, ME - May 16-18, 2024</h3>
-                    <p>Estimated Weather Forecast</p>
-                </div>
-                
-                <div class="weather-days">
-                    <div class="weather-day">
-                        <div class="weather-date">May 16</div>
-                        <div class="weather-icon"><i class="fas fa-cloud-sun"></i></div>
-                        <div class="weather-temp">48°F / 62°F</div>
-                        <div class="weather-desc">Partly Cloudy</div>
-                    </div>
-                    
-                    <div class="weather-day">
-                        <div class="weather-date">May 17</div>
-                        <div class="weather-icon"><i class="fas fa-sun"></i></div>
-                        <div class="weather-temp">52°F / 65°F</div>
-                        <div class="weather-desc">Mostly Sunny</div>
-                    </div>
-                    
-                    <div class="weather-day">
-                        <div class="weather-date">May 18</div>
-                        <div class="weather-icon"><i class="fas fa-cloud"></i></div>
-                        <div class="weather-temp">50°F / 63°F</div>
-                        <div class="weather-desc">Partly Cloudy</div>
-                    </div>
-                </div>
-                
-                <div class="weather-info">
-                    <p class="en">*Forecast is approximate based on seasonal averages.</p>
-                    <p class="pt">*Previsão aproximada baseada em médias sazonais.</p>
-                </div>
-            </div>
-        `;
-    };
-    
-    initWeatherWidget();
-
     // Memory Journal
     const initMemoryJournal = () => {
         const form = document.getElementById('memory-form');
