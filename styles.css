@@ -1269,6 +1269,19 @@ footer::before {
 }
 
 .en.active, .pt.active {
+    display: inline-block;
+}
+
+/* For block-level elements, we need a specific override */
+h1.en.active, h1.pt.active,
+h2.en.active, h2.pt.active,
+h3.en.active, h3.pt.active,
+h4.en.active, h4.pt.active,
+h5.en.active, h5.pt.active,
+p.en.active, p.pt.active,
+div.en.active, div.pt.active,
+ul.en.active, ul.pt.active,
+li.en.active, li.pt.active {
     display: block;
 }
 

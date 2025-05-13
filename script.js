@@ -4,26 +4,34 @@ document.addEventListener('DOMContentLoaded', () => {
     const enElements = document.querySelectorAll('.en');
     const ptElements = document.querySelectorAll('.pt');
 
-    // Set initial language
-    document.querySelector('[data-lang="en"]').classList.add('active');
-    enElements.forEach(el => el.classList.add('active'));
+    // Set initial language - default to English
+    const setLanguage = (lang) => {
+        // Update button states
+        langButtons.forEach(btn => {
+            btn.classList.remove('active');
+            if (btn.dataset.lang === lang) {
+                btn.classList.add('active');
+            }
+        });
+        
+        // Update content visibility
+        if (lang === 'en') {
+            enElements.forEach(el => el.classList.add('active'));
+            ptElements.forEach(el => el.classList.remove('active'));
+        } else {
+            enElements.forEach(el => el.classList.remove('active'));
+            ptElements.forEach(el => el.classList.add('active'));
+        }
+    };
 
+    // Initialize with English
+    setLanguage('en');
+
+    // Add click event listeners to language buttons
     langButtons.forEach(button => {
         button.addEventListener('click', () => {
             const lang = button.dataset.lang;
-            
-            // Update button states
-            langButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
-            
-            // Update content visibility
-            if (lang === 'en') {
-                enElements.forEach(el => el.classList.add('active'));
-                ptElements.forEach(el => el.classList.remove('active'));
-            } else {
-                enElements.forEach(el => el.classList.remove('active'));
-                ptElements.forEach(el => el.classList.add('active'));
-            }
+            setLanguage(lang);
         });
     });
 
