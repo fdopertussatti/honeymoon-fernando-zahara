@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernando & Zahara - Honeymoon in Acadia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="loader-heart">
+                <i class="fas fa-heart"></i>
+            </div>
+            <p class="loading-text">Loading...</p>
+        </div>
+    </div>
+
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <!-- Music Control -->
+    <div class="music-control">
+        <button class="music-btn">
+            <i class="fas fa-music"></i>
+            <div class="music-waves">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <audio id="background-music" loop>
+            <source src="https://www.bensound.com/bensound-music/bensound-acousticbreeze.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Floating Navigation -->
+    <nav class="floating-nav">
+        <ul>
+            <li><a href="#hero" data-tooltip="Home"><i class="fas fa-home"></i></a></li>
+            <li><a href="#overview" data-tooltip="Overview"><i class="fas fa-info-circle"></i></a></li>
+            <li><a href="#destination" data-tooltip="Destination"><i class="fas fa-map-marker-alt"></i></a></li>
+            <li><a href="#itinerary" data-tooltip="Itinerary"><i class="fas fa-calendar-alt"></i></a></li>
+            <li><a href="#gallery" data-tooltip="Gallery"><i class="fas fa-images"></i></a></li>
+            <li><a href="#memories" data-tooltip="Memories"><i class="fas fa-heart"></i></a></li>
+        </ul>
+    </nav>
+    
+    <header id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
+                <h1>Fernando & Zahara</h1>
+                <div class="divider">
+                    <span class="divider-icon"><i class="fas fa-heart"></i></span>
+                </div>
+                <h2>Our Honeymoon Adventure</h2>
+                <p class="subtitle">Acadia National Park & Bar Harbor</p>
+                <p class="date">May 16-18, 2024</p>
+            </div>
+            <div class="scroll-indicator">
+                <span class="en">Scroll to explore</span>
+                <span class="pt">Role para explorar</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </header>
+
+    <nav class="language-nav">
+        <button class="lang-btn active" data-lang="en">English</button>
+        <button class="lang-btn" data-lang="pt">Português</button>
+    </nav>
+
+    <main>
+        <!-- Wave Divider -->
+        <div class="wave-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="#ffffff" fill-opacity="1" d="M0,160L48,165.3C96,171,192,181,288,176C384,171,480,149,576,144C672,139,768,149,864,160C960,171,1056,181,1152,181.3C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+
+        <section id="overview" class="section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="en">Our Journey Begins</h2>
+                    <h2 class="pt">Nossa Jornada Começa</h2>
+                    <div class="divider">
+                        <span class="divider-icon"><i class="fas fa-heart"></i></span>
+                    </div>
+                </div>
+                
+                <div class="overview-content">
+                    <div class="overview-text" data-aos="fade-right">
+                        <div class="en">
+                            <p>Join us on our romantic journey through the stunning landscapes of Acadia National Park and the charming town of Bar Harbor. A perfect blend of nature, peace, and breathtaking views where mountains meet the sea.</p>
+                            <p>Acadia National Park, established in 1916, is the oldest national park east of the Mississippi River. Its rugged coastline, granite peaks, and pristine lakes have inspired artists, poets, and nature lovers for generations. The park's name comes from the Greek word "Arcadia," meaning a place of rural peace and simplicity.</p>
+                        </div>
+                        <div class="pt">
+                            <p>Acompanhe-nos em nossa jornada romântica pelas paisagens deslumbrantes do Parque Nacional de Acadia e a encantadora cidade de Bar Harbor. Uma mistura perfeita de natureza, paz e vistas impressionantes onde as montanhas encontram o mar.</p>
+                            <p>O Parque Nacional de Acadia, estabelecido em 1916, é o parque nacional mais antigo a leste do rio Mississippi. Sua costa acidentada, picos de granito e lagos pristinos inspiraram artistas, poetas e amantes da natureza por gerações. O nome do parque vem da palavra grega "Arcadia", que significa um lugar de paz rural e simplicidade.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="overview-image" data-aos="fade-left">
+                        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" alt="Acadia National Park">
+                    </div>
+                </div>
+                
+                <div class="overview-details" data-aos="fade-up">
+                    <div class="detail-item">
+                        <i class="fas fa-clock"></i>
+                        <span class="en">Duration: 3 Days</span>
+                        <span class="pt">Duração: 3 Dias</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="en">Distance: ~260 miles from Lowell</span>
+                        <span class="pt">Distância: ~260 milhas de Lowell</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span class="en">Estimated Budget: $250-$450</span>
+                        <span class="pt">Orçamento Estimado: $250-$450</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wave Divider -->
+        <div class="wave-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="#f5f5f7" fill-opacity="1" d="M0,160L48,165.3C96,171,192,181,288,176C384,171,480,149,576,144C672,139,768,149,864,160C960,171,1056,181,1152,181.3C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+
+        <section id="destination" class="section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="en">Our Destinations</h2>
+                    <h2 class="pt">Nossos Destinos</h2>
+                    <div class="divider">
+                        <span class="divider-icon"><i class="fas fa-map-marker-alt"></i></span>
+                    </div>
+                </div>
+                
+                <!-- Acadia National Park -->
+                <div class="destination-card" data-aos="fade-up">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Acadia National Park">
+                        <div class="destination-badge">
+                            <span>National Park</span>
+                        </div>
+                    </div>
+                    <div class="destination-details">
+                        <h3 class="en">Acadia National Park</h3>
+                        <h3 class="pt">Parque Nacional de Acadia</h3>
+                        
+                        <div class="destination-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-mountain"></i>
+                                <span class="en">47,000 acres</span>
+                                <span class="pt">47.000 acres</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-map-pin"></i>
+                                <span class="en">Mount Desert Island, Maine</span>
+                                <span class="pt">Ilha Mount Desert, Maine</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-hiking"></i>
+                                <span class="en">158 miles of hiking trails</span>
+                                <span class="pt">158 milhas de trilhas</span>
+                            </div>
+                        </div>
+                        
+                        <div class="destination-text en">
+                            <p>Acadia National Park is a 47,000-acre Atlantic coast recreation area primarily on Maine's Mount Desert Island. Its landscape is marked by woodland, rocky beaches, and glacier-scoured granite peaks such as Cadillac Mountain, the highest point on the United States' East Coast.</p>
+                            <p>The park is home to diverse wildlife, including moose, black bears, and various bird species. Its waters are rich with marine life, from seals to whales. The park's extensive trail system offers opportunities for hiking, biking, and exploring the natural beauty of the area.</p>
+                        </div>
+                        
+                        <div class="destination-text pt">
+                            <p>O Parque Nacional de Acadia é uma área de recreação de 47.000 acres na costa do Atlântico, principalmente na Ilha Mount Desert do Maine. Sua paisagem é marcada por bosques, praias rochosas e picos de granito esculpidos por glaciares, como o Monte Cadillac, o ponto mais alto da costa leste dos Estados Unidos.</p>
+                            <p>O parque abriga uma vida selvagem diversificada, incluindo alces, ursos negros e várias espécies de aves. Suas águas são ricas em vida marinha, de focas a baleias. O extenso sistema de trilhas do parque oferece oportunidades para caminhadas, ciclismo e exploração da beleza natural da área.</p>
+                        </div>
+                        
+                        <div class="destination-highlights">
+                            <h4 class="en">Highlights</h4>
+                            <h4 class="pt">Destaques</h4>
+                            <div class="highlights-grid">
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">
+                                        <i class="fas fa-mountain"></i>
+                                    </div>
+                                    <div class="highlight-text">
+                                        <h5 class="en">Cadillac Mountain</h5>
+                                        <h5 class="pt">Montanha Cadillac</h5>
+                                        <p class="en">First place in the U.S. to see the sunrise</p>
+                                        <p class="pt">Primeiro lugar nos EUA a ver o nascer do sol</p>
+                                    </div>
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">
+                                        <i class="fas fa-water"></i>
+                                    </div>
+                                    <div class="highlight-text">
+                                        <h5 class="en">Thunder Hole</h5>
+                                        <h5 class="pt">Thunder Hole</h5>
+                                        <p class="en">Natural rock formation with crashing waves</p>
+                                        <p class="pt">Formação rochosa natural com ondas estrondosas</p>
+                                    </div>
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">
+                                        <i class="fas fa-tree"></i>
+                                    </div>
+                                    <div class="highlight-text">
+                                        <h5 class="en">Jordan Pond</h5>
+                                        <h5 class="pt">Lago Jordan</h5>
+                                        <p class="en">Crystal clear pond with spectacular views</p>
+                                        <p class="pt">Lago de águas cristalinas com vistas espetaculares</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bar Harbor -->
+                <div class="destination-card reverse" data-aos="fade-up">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Bar Harbor">
+                        <div class="destination-badge">
+                            <span>Coastal Town</span>
+                        </div>
+                    </div>
+                    <div class="destination-details">
+                        <h3 class="en">Bar Harbor</h3>
+                        <h3 class="pt">Bar Harbor</h3>
+                        
+                        <div class="destination-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-utensils"></i>
+                                <span class="en">Famous for seafood</span>
+                                <span class="pt">Famosa por frutos do mar</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-ship"></i>
+                                <span class="en">Scenic harbor views</span>
+                                <span class="pt">Vistas panorâmicas do porto</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-store"></i>
+                                <span class="en">Charming local shops</span>
+                                <span class="pt">Charmosas lojas locais</span>
+                            </div>
+                        </div>
+                        
+                        <div class="destination-text en">
+                            <p>Bar Harbor is a charming resort town on Mount Desert Island, adjacent to Acadia National Park. Known for its quaint downtown area, historic cottages, and stunning harbor views, it has been a popular summer destination since the late 19th century.</p>
+                            <p>The town offers a perfect blend of natural beauty and small-town charm, with numerous restaurants, shops, and activities for visitors. Its rich history, dating back to the Wabanaki people who first inhabited the area, adds depth to the visitor experience.</p>
+                        </div>
+                        
+                        <div class="destination-text pt">
+                            <p>Bar Harbor é uma encantadora cidade turística na Ilha Mount Desert, adjacente ao Parque Nacional de Acadia. Conhecida por sua área central pitoresca, casas de campo históricas e vistas deslumbrantes do porto, tem sido um destino de verão popular desde o final do século 19.</p>
+                            <p>A cidade oferece uma mistura perfeita de beleza natural e charme de cidade pequena, com numerosos restaurantes, lojas e atividades para os visitantes. Sua rica história, que remonta ao povo Wabanaki que primeiro habitou a área, adiciona profundidade à experiência do visitante.</p>
+                        </div>
+                        
+                        <div class="destination-highlights">
+                            <h4 class="en">Highlights</h4>
+                            <h4 class="pt">Destaques</h4>
+                            <div class="highlights-grid">
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">
+                                        <i class="fas fa-utensils"></i>
+                                    </div>
+                                    <div class="highlight-text">
+                                        <h5 class="en">Local Cuisine</h5>
+                                        <h5 class="pt">Culinária Local</h5>
+                                        <p class="en">Freshly caught lobster and seafood</p>
+                                        <p class="pt">Lagosta fresca e frutos do mar</p>
+                                    </div>
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">
+                                        <i class="fas fa-ship"></i>
+                                    </div>
+                                    <div class="highlight-text">
+                                        <h5 class="en">Harbor Cruises</h5>
+                                        <h5 class="pt">Passeios de Barco</h5>
+                                        <p class="en">Whale watching and scenic tours</p>
+                                        <p class="pt">Observação de baleias e passeios panorâmicos</p>
+                                    </div>
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">
+                                        <i class="fas fa-ice-cream"></i>
+                                    </div>
+                                    <div class="highlight-text">
+                                        <h5 class="en">Shore Path</h5>
+                                        <h5 class="pt">Caminho da Costa</h5>
+                                        <p class="en">Historic walking path along the shoreline</p>
+                                        <p class="pt">Caminho histórico ao longo da costa</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wave Divider -->
+        <div class="wave-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="#ffffff" fill-opacity="1" d="M0,160L48,165.3C96,171,192,181,288,176C384,171,480,149,576,144C672,139,768,149,864,160C960,171,1056,181,1152,181.3C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+
+        <section id="itinerary" class="section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="en">Our Itinerary</h2>
+                    <h2 class="pt">Nosso Roteiro</h2>
+                    <div class="divider">
+                        <span class="divider-icon"><i class="fas fa-heart"></i></span>
+                    </div>
+                </div>
+                
+                <div class="timeline">
+                    <!-- Day 1 -->
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-content">
+                            <div class="timeline-date">
+                                <span class="day">16</span>
+                                <span class="month">MAY</span>
+                            </div>
+                            <h3 class="en">Day 1 - Friday</h3>
+                            <h3 class="pt">Dia 1 - Sexta-feira</h3>
+                            <div class="timeline-details en">
+                                <h4>Afternoon</h4>
+                                <p>Wedding ceremony and lunch with friends until ~4-5 PM</p>
+                                <p>Evening: Drive to Bar Harbor (pack light snacks for the road)</p>
+                                <p>Expected arrival: ~10 PM</p>
+                                <p>Check-in and rest</p>
+                                
+                                <div class="timeline-note">
+                                    <h5>Accommodation Options:</h5>
+                                    <ul>
+                                        <li>Anchorage Motel (~$100/night) - A cozy, family-owned motel with ocean views</li>
+                                        <li>Bar Harbor Villager Motel - A comfortable stay in the heart of Bar Harbor</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="timeline-details pt">
+                                <h4>Tarde</h4>
+                                <p>Cerimônia de casamento e almoço com amigos até ~16h-17h</p>
+                                <p>Noite: Viagem para Bar Harbor (levar lanche leve para o carro)</p>
+                                <p>Chegada prevista: ~22h</p>
+                                <p>Check-in e descanso</p>
+                                
+                                <div class="timeline-note">
+                                    <h5>Opções de Hospedagem:</h5>
+                                    <ul>
+                                        <li>Anchorage Motel (~$100/noite) - Um aconchegante motel familiar com vista para o oceano</li>
+                                        <li>Bar Harbor Villager Motel - Uma estadia confortável no coração de Bar Harbor</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 2 -->
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-content">
+                            <div class="timeline-date">
+                                <span class="day">17</span>
+                                <span class="month">MAY</span>
+                            </div>
+                            <h3 class="en">Day 2 - Saturday</h3>
+                            <h3 class="pt">Dia 2 - Sábado</h3>
+                            <div class="timeline-details en">
+                                <h4>Morning</h4>
+                                <ul>
+                                    <li>Breakfast at a local café</li>
+                                    <li>Acadia National Park tour (Entry: $20 per car, valid for 7 days)</li>
+                                    <li>Jordan Pond + Jordan Pond Path - A serene 3.3-mile loop around the crystal-clear pond, with views of the iconic "Bubbles" mountains</li>
+                                    <li>Cadillac Mountain Summit Road - Drive to the highest point on the U.S. Atlantic coast (1,530 feet) for panoramic views of the park and surrounding islands</li>
+                                </ul>
+                                
+                                <h4>Afternoon</h4>
+                                <ul>
+                                    <li>Romantic picnic lunch at a scenic overlook</li>
+                                    <li>Ocean Path to Thunder Hole - A 2-mile round trip along the rocky coast, featuring the famous Thunder Hole where waves crash into a narrow inlet, creating a thunderous sound</li>
+                                    <li>Sand Beach relaxation - A rare sandy beach in Acadia, perfect for sunbathing and enjoying the Atlantic breeze</li>
+                                    <li>Sunset at Cadillac Mountain or Bass Harbor Head Lighthouse - The lighthouse, built in 1858, is one of the most photographed spots in Maine</li>
+                                </ul>
+                                
+                                <h4>Evening</h4>
+                                <ul>
+                                    <li>Dinner at Side Street Café - Known for their award-winning lobster mac & cheese and extensive craft beer selection</li>
+                                    <li>Alternative: Reel Pizza Cinerama - A unique dining experience where you can enjoy pizza while watching a movie</li>
+                                    <li>Charming Bar Harbor downtown walk - Explore the historic streets, boutique shops, and waterfront views</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-details pt">
+                                <h4>Manhã</h4>
+                                <ul>
+                                    <li>Café da manhã em um café local</li>
+                                    <li>Tour pelo Parque Nacional de Acadia (Entrada: $20 por carro, válida por 7 dias)</li>
+                                    <li>Jordan Pond + Jordan Pond Path - Um sereno circuito de 5,3 km ao redor do lago de águas cristalinas, com vistas das icônicas montanhas "Bubbles"</li>
+                                    <li>Cadillac Mountain Summit Road - Dirija até o ponto mais alto da costa atlântica dos EUA (466 metros) para vistas panorâmicas do parque e ilhas circundantes</li>
+                                </ul>
+                                
+                                <h4>Tarde</h4>
+                                <ul>
+                                    <li>Almoço romântico com piquenique em um mirante panorâmico</li>
+                                    <li>Ocean Path até Thunder Hole - Uma viagem de ida e volta de 3,2 km ao longo da costa rochosa, com o famoso Thunder Hole onde as ondas batem em uma entrada estreita, criando um som trovejante</li>
+                                    <li>Relaxamento na Sand Beach - Uma rara praia de areia em Acadia, perfeita para tomar sol e desfrutar da brisa do Atlântico</li>
+                                    <li>Pôr do sol no Cadillac Mountain ou Bass Harbor Head Lighthouse - O farol, construído em 1858, é um dos pontos mais fotografados do Maine</li>
+                                </ul>
+                                
+                                <h4>Noite</h4>
+                                <ul>
+                                    <li>Jantar no Side Street Café - Conhecido por seu macarrão com queijo e lagosta premiado e extensa seleção de cervejas artesanais</li>
+                                    <li>Alternativa: Reel Pizza Cinerama - Uma experiência gastronômica única onde você pode desfrutar de pizza enquanto assiste a um filme</li>
+                                    <li>Caminhada pelo encantador centro de Bar Harbor - Explore as ruas históricas, lojas de boutique e vistas para o porto</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 3 -->
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-content">
+                            <div class="timeline-date">
+                                <span class="day">18</span>
+                                <span class="month">MAY</span>
+                            </div>
+                            <h3 class="en">Day 3 - Sunday</h3>
+                            <h3 class="pt">Dia 3 - Domingo</h3>
+                            <div class="timeline-details en">
+                                <h4>Morning</h4>
+                                <ul>
+                                    <li>Breakfast at a local café</li>
+                                    <li>Final walk: Village Green or Bar Island Trail - The Bar Island Trail is a unique experience accessible only at low tide, leading to a small island with panoramic views of Bar Harbor</li>
+                                    <li>Check-out around 10:30-11 AM</li>
+                                    <li>Lunch stop in Augusta or Portland - Portland, Maine's largest city, offers a vibrant food scene and historic Old Port district</li>
+                                    <li>Expected arrival in Lowell: 4-5 PM</li>
+                                </ul>
+                                
+                                <div class="timeline-note">
+                                    <h5>Travel Tips:</h5>
+                                    <ul>
+                                        <li>Pack snacks, water bottles, coffee, fruits, and even a cooler with sandwiches for the road</li>
+                                        <li>Book accommodation in advance to avoid high prices</li>
+                                        <li>Bring comfortable clothes and shoes, sunscreen, and a light jacket (even in May it can be windy)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="timeline-details pt">
+                                <h4>Manhã</h4>
+                                <ul>
+                                    <li>Café da manhã em um café local</li>
+                                    <li>Última caminhada: Village Green ou Bar Island Trail - A Trilha Bar Island é uma experiência única acessível apenas na maré baixa, levando a uma pequena ilha com vistas panorâmicas de Bar Harbor</li>
+                                    <li>Check-out por volta de 10h30-11h</li>
+                                    <li>Parada para almoço em Augusta ou Portland - Portland, a maior cidade do Maine, oferece uma vibrante cena gastronômica e o histórico distrito Old Port</li>
+                                    <li>Chegada prevista em Lowell: 16h-17h</li>
+                                </ul>
+                                
+                                <div class="timeline-note">
+                                    <h5>Dicas de Viagem:</h5>
+                                    <ul>
+                                        <li>Leve snacks, garrafinhas de água, café, frutas e até um cooler com sanduíches para a estrada</li>
+                                        <li>Reserve hospedagem com antecedência para evitar preços altos</li>
+                                        <li>Use roupas e calçados confortáveis, protetor solar e traga um casaco leve (mesmo em maio pode ventar)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wave Divider -->
+        <div class="wave-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="#ffffff" fill-opacity="1" d="M0,160L48,165.3C96,171,192,181,288,176C384,171,480,149,576,144C672,139,768,149,864,160C960,171,1056,181,1152,181.3C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+
+        <section id="gallery" class="section parallax-section">
+            <div class="parallax-overlay"></div>
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="en">Photo Gallery</h2>
+                    <h2 class="pt">Galeria de Fotos</h2>
+                    <div class="divider">
+                        <span class="divider-icon"><i class="fas fa-heart"></i></span>
+                    </div>
+                </div>
+                
+                <div class="gallery-grid">
+                    <!-- Gallery items will be added dynamically via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Wave Divider -->
+        <div class="wave-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="#ffffff" fill-opacity="1" d="M0,160L48,165.3C96,171,192,181,288,176C384,171,480,149,576,144C672,139,768,149,864,160C960,171,1056,181,1152,181.3C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+
+        <section id="memories" class="section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="en">Our Memories</h2>
+                    <h2 class="pt">Nossas Memórias</h2>
+                    <div class="divider">
+                        <span class="divider-icon"><i class="fas fa-heart"></i></span>
+                    </div>
+                </div>
+                
+                <div class="memories-content" data-aos="fade-up">
+                    <div class="en">
+                        <p>This section will be filled with our precious moments together, capturing the magic of our honeymoon in Acadia.</p>
+                    </div>
+                    <div class="pt">
+                        <p>Esta seção será preenchida com nossos momentos preciosos juntos, capturando a magia da nossa lua de mel em Acadia.</p>
+                    </div>
+                    <div class="memories-gallery">
+                        <!-- Memories will be added after the trip -->
+                        <div class="memory-placeholder">
+                            <i class="fas fa-camera"></i>
+                            <p class="en">Our photos will appear here</p>
+                            <p class="pt">Nossas fotos aparecerão aqui</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p class="en">Made with ❤️ for our special journey</p>
+                    <p class="pt">Feito com ❤️ para nossa jornada especial</p>
+                </div>
+                <div class="footer-icons">
+                    <a href="#" class="footer-icon"><i class="fas fa-heart"></i></a>
+                    <a href="#" class="footer-icon"><i class="fas fa-map-marked-alt"></i></a>
+                    <a href="#" class="footer-icon"><i class="fas fa-camera"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
