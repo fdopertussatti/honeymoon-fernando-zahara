@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fernando & Zahara - Honeymoon in Acadia</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.css">
 </head>
@@ -47,6 +49,8 @@
             <li><a href="#overview" data-tooltip="Overview"><i class="fas fa-info-circle"></i></a></li>
             <li><a href="#destination" data-tooltip="Destination"><i class="fas fa-map-marker-alt"></i></a></li>
             <li><a href="#itinerary" data-tooltip="Itinerary"><i class="fas fa-calendar-alt"></i></a></li>
+            <li><a href="#map" data-tooltip="Map"><i class="fas fa-map"></i></a></li>
+            <li><a href="#weather" data-tooltip="Weather"><i class="fas fa-cloud-sun"></i></a></li>
             <li><a href="#gallery" data-tooltip="Gallery"><i class="fas fa-images"></i></a></li>
             <li><a href="#memories" data-tooltip="Memories"><i class="fas fa-heart"></i></a></li>
         </ul>
@@ -63,6 +67,9 @@
                 <h2>Our Honeymoon Adventure</h2>
                 <p class="subtitle">Acadia National Park & Bar Harbor</p>
                 <p class="date">May 16-18, 2024</p>
+            </div>
+            <div class="hero-couple-photo" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <img src="images/fernando-zahara.png" alt="Fernando and Zahara">
             </div>
             <div class="scroll-indicator">
                 <span class="en">Scroll to explore</span>
@@ -108,7 +115,7 @@
                     </div>
                     
                     <div class="overview-image" data-aos="fade-left">
-                        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" alt="Acadia National Park">
+                        <img src="images/acadia-national-park-overview.webp" alt="Acadia National Park">
                     </div>
                 </div>
                 
@@ -122,11 +129,6 @@
                         <i class="fas fa-map-marker-alt"></i>
                         <span class="en">Distance: ~260 miles from Lowell</span>
                         <span class="pt">Distância: ~260 milhas de Lowell</span>
-                    </div>
-                    <div class="detail-item">
-                        <i class="fas fa-dollar-sign"></i>
-                        <span class="en">Estimated Budget: $250-$450</span>
-                        <span class="pt">Orçamento Estimado: $250-$450</span>
                     </div>
                 </div>
             </div>
@@ -152,7 +154,7 @@
                 <!-- Acadia National Park -->
                 <div class="destination-card" data-aos="fade-up">
                     <div class="destination-image">
-                        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Acadia National Park">
+                        <img src="images/acadia-national-park-overview.webp" alt="Acadia National Park">
                         <div class="destination-badge">
                             <span>National Park</span>
                         </div>
@@ -234,7 +236,7 @@
                 <!-- Bar Harbor -->
                 <div class="destination-card reverse" data-aos="fade-up">
                     <div class="destination-image">
-                        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Bar Harbor">
+                        <img src="images/bar-harbor.jpg" alt="Bar Harbor">
                         <div class="destination-badge">
                             <span>Coastal Town</span>
                         </div>
@@ -349,12 +351,21 @@
                                 <p>Expected arrival: ~10 PM</p>
                                 <p>Check-in and rest</p>
                                 
-                                <div class="timeline-note">
-                                    <h5>Accommodation Options:</h5>
-                                    <ul>
-                                        <li>Anchorage Motel (~$100/night) - A cozy, family-owned motel with ocean views</li>
-                                        <li>Bar Harbor Villager Motel - A comfortable stay in the heart of Bar Harbor</li>
-                                    </ul>
+                                <div class="timeline-note accommodation-info">
+                                    <div class="accommodation-header">
+                                        <div class="accommodation-text">
+                                            <h5>Our Accommodation:</h5>
+                                            <h6>Acadia Inn</h6>
+                                            <p class="accommodation-address">98 Eden Street, Bar Harbor, ME 04609, United States</p>
+                                            <p class="accommodation-phone">Phone: <a href="tel:+12072888422">+1 207-288-8422</a></p>
+                                        </div>
+                                        <div class="accommodation-image">
+                                            <a href="https://maps.app.goo.gl/SFVpg7xLv5aoxP3b9" target="_blank" class="map-link" title="Open in Maps">
+                                                <img src="images/acadia-inn.webp" alt="Acadia Inn">
+                                                <div class="map-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="timeline-details pt">
@@ -364,12 +375,21 @@
                                 <p>Chegada prevista: ~22h</p>
                                 <p>Check-in e descanso</p>
                                 
-                                <div class="timeline-note">
-                                    <h5>Opções de Hospedagem:</h5>
-                                    <ul>
-                                        <li>Anchorage Motel (~$100/noite) - Um aconchegante motel familiar com vista para o oceano</li>
-                                        <li>Bar Harbor Villager Motel - Uma estadia confortável no coração de Bar Harbor</li>
-                                    </ul>
+                                <div class="timeline-note accommodation-info">
+                                    <div class="accommodation-header">
+                                        <div class="accommodation-text">
+                                            <h5>Nossa Hospedagem:</h5>
+                                            <h6>Acadia Inn</h6>
+                                            <p class="accommodation-address">98 Eden Street, Bar Harbor, ME 04609, Estados Unidos</p>
+                                            <p class="accommodation-phone">Telefone: <a href="tel:+12072888422">+1 207-288-8422</a></p>
+                                        </div>
+                                        <div class="accommodation-image">
+                                            <a href="https://maps.app.goo.gl/SFVpg7xLv5aoxP3b9" target="_blank" class="map-link" title="Abrir no Maps">
+                                                <img src="images/acadia-inn.webp" alt="Acadia Inn">
+                                                <div class="map-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -495,6 +515,140 @@
             </svg>
         </div>
 
+        <section id="map" class="section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="en">Interactive Map</h2>
+                    <h2 class="pt">Mapa Interativo</h2>
+                    <div class="divider">
+                        <span class="divider-icon"><i class="fas fa-map"></i></span>
+                    </div>
+                </div>
+                
+                <div class="map-content" data-aos="fade-up">
+                    <div class="map-description">
+                        <div class="en">
+                            <p>Explore our honeymoon destinations with this interactive map. Click on the markers to discover key locations we'll be visiting during our stay in Acadia National Park and Bar Harbor.</p>
+                        </div>
+                        <div class="pt">
+                            <p>Explore nossos destinos de lua de mel com este mapa interativo. Clique nos marcadores para descobrir os principais locais que visitaremos durante nossa estadia no Parque Nacional de Acadia e Bar Harbor.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="map-container">
+                        <div id="honeymoon-map"></div>
+                    </div>
+                    
+                    <div class="map-legend">
+                        <div class="legend-item">
+                            <div class="legend-icon accommodation"></div>
+                            <span class="en">Accommodation</span>
+                            <span class="pt">Hospedagem</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-icon attraction"></div>
+                            <span class="en">Attraction</span>
+                            <span class="pt">Atração</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-icon food"></div>
+                            <span class="en">Restaurant</span>
+                            <span class="pt">Restaurante</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-icon scenic"></div>
+                            <span class="en">Scenic Point</span>
+                            <span class="pt">Ponto Panorâmico</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wave Divider -->
+        <div class="wave-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="#ffffff" fill-opacity="1" d="M0,160L48,165.3C96,171,192,181,288,176C384,171,480,149,576,144C672,139,768,149,864,160C960,171,1056,181,1152,181.3C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+
+        <section id="weather" class="section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="en">Weather Forecast</h2>
+                    <h2 class="pt">Previsão do Tempo</h2>
+                    <div class="divider">
+                        <span class="divider-icon"><i class="fas fa-cloud-sun"></i></span>
+                    </div>
+                </div>
+                
+                <div class="weather-content" data-aos="fade-up">
+                    <div class="weather-description">
+                        <div class="en">
+                            <p>Check the weather forecast for our honeymoon dates to help you pack appropriately. Bar Harbor and Acadia National Park weather can be variable in May, with average temperatures ranging from 45°F to 65°F (7°C to 18°C).</p>
+                        </div>
+                        <div class="pt">
+                            <p>Confira a previsão do tempo para as datas da nossa lua de mel para ajudá-lo a fazer as malas adequadamente. O clima em Bar Harbor e no Parque Nacional de Acadia pode ser variável em maio, com temperaturas médias variando de 7°C a 18°C.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="weather-widget">
+                        <div id="openweathermap-widget"></div>
+                    </div>
+                    
+                    <div class="weather-tips">
+                        <h4 class="en">Packing Tips</h4>
+                        <h4 class="pt">Dicas para Bagagem</h4>
+                        <div class="weather-tips-content">
+                            <div class="weather-tip-item">
+                                <i class="fas fa-tshirt"></i>
+                                <div class="weather-tip-text">
+                                    <h5 class="en">Layered Clothing</h5>
+                                    <h5 class="pt">Roupas em Camadas</h5>
+                                    <p class="en">Temperatures can vary throughout the day</p>
+                                    <p class="pt">As temperaturas podem variar ao longo do dia</p>
+                                </div>
+                            </div>
+                            <div class="weather-tip-item">
+                                <i class="fas fa-wind"></i>
+                                <div class="weather-tip-text">
+                                    <h5 class="en">Windbreaker</h5>
+                                    <h5 class="pt">Corta-vento</h5>
+                                    <p class="en">Coastal areas can be windy, especially at Cadillac Mountain</p>
+                                    <p class="pt">Áreas costeiras podem ser ventosas, especialmente no Monte Cadillac</p>
+                                </div>
+                            </div>
+                            <div class="weather-tip-item">
+                                <i class="fas fa-cloud-rain"></i>
+                                <div class="weather-tip-text">
+                                    <h5 class="en">Rain Gear</h5>
+                                    <h5 class="pt">Equipamento de Chuva</h5>
+                                    <p class="en">Spring in Maine can bring occasional showers</p>
+                                    <p class="pt">A primavera no Maine pode trazer chuvas ocasionais</p>
+                                </div>
+                            </div>
+                            <div class="weather-tip-item">
+                                <i class="fas fa-hiking"></i>
+                                <div class="weather-tip-text">
+                                    <h5 class="en">Hiking Shoes</h5>
+                                    <h5 class="pt">Calçados de Caminhada</h5>
+                                    <p class="en">Comfortable, waterproof shoes for trails</p>
+                                    <p class="pt">Sapatos confortáveis e impermeáveis para trilhas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wave Divider -->
+        <div class="wave-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="#ffffff" fill-opacity="1" d="M0,160L48,165.3C96,171,192,181,288,176C384,171,480,149,576,144C672,139,768,149,864,160C960,171,1056,181,1152,181.3C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+
         <section id="gallery" class="section parallax-section">
             <div class="parallax-overlay"></div>
             <div class="container">
@@ -531,17 +685,112 @@
                 
                 <div class="memories-content" data-aos="fade-up">
                     <div class="en">
-                        <p>This section will be filled with our precious moments together, capturing the magic of our honeymoon in Acadia.</p>
+                        <p>Capture your special moments during the honeymoon and save them for a lifetime of memories. Use this journal to document your experiences, thoughts, and feelings.</p>
                     </div>
                     <div class="pt">
-                        <p>Esta seção será preenchida com nossos momentos preciosos juntos, capturando a magia da nossa lua de mel em Acadia.</p>
+                        <p>Capture seus momentos especiais durante a lua de mel e salve-os para uma vida inteira de memórias. Use este diário para documentar suas experiências, pensamentos e sentimentos.</p>
                     </div>
-                    <div class="memories-gallery">
-                        <!-- Memories will be added after the trip -->
-                        <div class="memory-placeholder">
-                            <i class="fas fa-camera"></i>
-                            <p class="en">Our photos will appear here</p>
-                            <p class="pt">Nossas fotos aparecerão aqui</p>
+                    
+                    <div class="journal-form">
+                        <form id="memory-form">
+                            <div class="form-group">
+                                <label for="memory-date" class="en">Date</label>
+                                <label for="memory-date" class="pt">Data</label>
+                                <input type="date" id="memory-date" name="memory-date" min="2024-05-16" max="2024-05-18">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="memory-location" class="en">Location</label>
+                                <label for="memory-location" class="pt">Local</label>
+                                <select id="memory-location" name="memory-location">
+                                    <option value="" disabled selected class="en">Select a location</option>
+                                    <option value="" disabled selected class="pt">Selecione um local</option>
+                                    <option value="acadia-inn">Acadia Inn</option>
+                                    <option value="cadillac-mountain">Cadillac Mountain</option>
+                                    <option value="thunder-hole">Thunder Hole</option>
+                                    <option value="jordan-pond">Jordan Pond</option>
+                                    <option value="sand-beach">Sand Beach</option>
+                                    <option value="bar-harbor-downtown">Bar Harbor Downtown</option>
+                                    <option value="bass-harbor-lighthouse">Bass Harbor Lighthouse</option>
+                                    <option value="other" class="en">Other (specify in description)</option>
+                                    <option value="other" class="pt">Outro (especifique na descrição)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="memory-title" class="en">Memory Title</label>
+                                <label for="memory-title" class="pt">Título da Memória</label>
+                                <input type="text" id="memory-title" name="memory-title" placeholder="E.g. Sunrise at Cadillac Mountain">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="memory-description" class="en">Description</label>
+                                <label for="memory-description" class="pt">Descrição</label>
+                                <textarea id="memory-description" name="memory-description" rows="4" placeholder="Describe your experience..."></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="memory-mood" class="en">Mood</label>
+                                <label for="memory-mood" class="pt">Humor</label>
+                                <div class="mood-selector">
+                                    <div class="mood-option" data-mood="amazing">
+                                        <i class="fas fa-grin-stars"></i>
+                                        <span class="en">Amazing</span>
+                                        <span class="pt">Incrível</span>
+                                    </div>
+                                    <div class="mood-option" data-mood="happy">
+                                        <i class="fas fa-smile"></i>
+                                        <span class="en">Happy</span>
+                                        <span class="pt">Feliz</span>
+                                    </div>
+                                    <div class="mood-option" data-mood="peaceful">
+                                        <i class="fas fa-heart"></i>
+                                        <span class="en">Peaceful</span>
+                                        <span class="pt">Tranquilo</span>
+                                    </div>
+                                    <div class="mood-option" data-mood="tired">
+                                        <i class="fas fa-tired"></i>
+                                        <span class="en">Tired</span>
+                                        <span class="pt">Cansado</span>
+                                    </div>
+                                </div>
+                                <input type="hidden" id="memory-mood" name="memory-mood">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="memory-photo" class="en">Add Photo</label>
+                                <label for="memory-photo" class="pt">Adicionar Foto</label>
+                                <div class="photo-upload">
+                                    <input type="file" id="memory-photo" name="memory-photo" accept="image/*">
+                                    <div class="upload-placeholder">
+                                        <i class="fas fa-camera"></i>
+                                        <span class="en">Click to upload</span>
+                                        <span class="pt">Clique para carregar</span>
+                                    </div>
+                                    <div class="photo-preview"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="submit" class="submit-btn">
+                                    <span class="en">Save Memory</span>
+                                    <span class="pt">Salvar Memória</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="saved-memories">
+                        <h3 class="en">Saved Memories</h3>
+                        <h3 class="pt">Memórias Salvas</h3>
+                        
+                        <div class="memories-grid" id="saved-memories-grid">
+                            <!-- Saved memories will appear here -->
+                            <div class="empty-memories">
+                                <i class="fas fa-book-open"></i>
+                                <p class="en">Your saved memories will appear here</p>
+                                <p class="pt">Suas memórias salvas aparecerão aqui</p>
+                            </div>
                         </div>
                     </div>
                 </div>
